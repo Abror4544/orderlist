@@ -3,10 +3,11 @@ import filterIcon from "../../assets/images/filter.svg";
 import Order from "./Order";
 import React from "react";
 import Preloader from "../common/Preloader/Preloader"
-import * as axios from 'axios';
+import axios from 'axios';
 
-class Orders extends React.Component {
-    constructor(props) {
+
+class Orders extends React.Component<{state: any}, { loading: any }> {
+    constructor(props: any) {
         super(props);
         this.state = {
             loading: false
@@ -16,7 +17,7 @@ class Orders extends React.Component {
     componentDidMount() {
         axios
             .get("https://u38027.netangels.ru/api/orders.php")
-            .then((response) => {
+            .then((response: any) => {
                 this.props.state.ordersPage.orders = [];
                 for (let i = 0; i < response.data.length; i++) {
                     this.props.state.ordersPage.orders.push(response.data[i]);
@@ -26,8 +27,7 @@ class Orders extends React.Component {
     }
 
     render() {
-        const { loading } = this.state;
-        
+        const { loading }: any = this.state;
         return this.state.loading ? (
             <div className={s.ordersWrapper}>
                 <div className={s.titleBlock}>
@@ -36,7 +36,7 @@ class Orders extends React.Component {
                 </div>
                 <div className={s.ordersBlock}>
                     {loading &&
-                        this.props.state.ordersPage.orders.map((o) =>
+                        this.props.state.ordersPage.orders.map((o: any) =>
                             <Order key={o.id} order={o} sale={o.sale} />
                         )
                     }

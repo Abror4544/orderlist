@@ -1,7 +1,7 @@
 import s from "./Info.module.css";
 
 
-const Good = (props) => {
+const Good = (props : any) => {
     let price = props.good.price * props.good.count - props.sale * props.good.count
     return (
         <div className={s.goodItem}>

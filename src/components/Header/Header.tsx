@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Header.module.css';
 
-const Header = (props) => {
+const Header = (props: any) => {
     return (
         <header className={s.header}>
             <div className={s.menu_bar}>

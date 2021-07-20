@@ -2,7 +2,7 @@ import s from "./Orders.module.css";
 import { NavLink } from "react-router-dom";
 
 
-const Order = (props) => {
+const Order = (props: any) => {
     let prices = [];
     let sale = props.sale;
     for (let i = 0; i < props.order.goods.length; i++) {

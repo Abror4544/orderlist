@@ -1,15 +1,20 @@
 import s from "./Info.module.css";
 import React from 'react';
 import Good from "./Good";
-import { NavLink } from "react-router-dom";
+import { NavLink, RouteComponentProps } from "react-router-dom";
 import close from "../../assets/images/close.svg";
 
-class Info extends React.Component {
+interface GoodsInfoPageProps extends RouteComponentProps {
+    history: any;
+    state: any;
+}
+
+class Info extends React.Component<GoodsInfoPageProps> {
     render() {
         let id = this.props.history.match.params.orderId;
         let item = this.props.state.ordersPage.orders;
         let goods = item[0].goods;
-        item = item.filter(function (o) {
+        item = item.filter(function (o: any) {
             return o.id === id
         })
         let prices = [];
@@ -40,7 +45,7 @@ class Info extends React.Component {
                     <p>Название наименование товара</p>
                 </div>
                 <div className={s.goods}>
-                    {goods.map((o) =>
+                    {goods.map((o: any) =>
                         <Good key={o.id} good={o} sale={item[0].sale} />
                     )}
                 </div>

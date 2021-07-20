@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import store from "./redux/redux-store";
 import { HashRouter } from "react-router-dom";
 
-let rerenderEntireTree = (state) => {
+let rerenderEntireTree = (state: any) => {
   ReactDOM.render(
     <HashRouter>
       <App state={state} dispatch={store.dispatch.bind(store)} store={store} />
