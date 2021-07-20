@@ -1,0 +1,16 @@
+.header {
+    background: linear-gradient(180deg, #FFFFFF -10%, rgba(255, 255, 255, 0) 100%);
+    padding: 34px 27px 35px;
+}
+
+.header .menu_bar {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.header .menu_bar div{
+    height: 3px;
+    width: 28px;
+    background: #000;
+    margin-top: 5px;
+}

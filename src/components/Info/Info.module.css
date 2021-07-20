@@ -1,0 +1,124 @@
+.infoWrapper {
+    background: #ffffff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 16px 16px 0px 0px;
+    padding: 20px 23px 37px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.head h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 29px;
+    letter-spacing: -0.408px;
+    color: #000000;
+}
+
+.head span {
+    font-weight: 500;
+    font-size: 0.938rem;
+    line-height: 18px;
+    letter-spacing: -0.408px;
+    color: #5364ff;
+    margin-left: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 16px;
+    right: 13px;
+}
+
+.title {
+    margin-top: 31px;
+}
+
+.title h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: #000000;
+}
+
+.title p {
+    font-weight: normal;
+    font-size: 0.938rem;
+    line-height: 18px;
+    letter-spacing: -0.408px;
+    color: #888e99;
+    margin-top: 4px;
+}
+
+.goods {
+    padding-bottom: 33px;
+    border-bottom: 1px solid #ecedef;
+}
+
+.goodItem {
+    background: #ecedef;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.goodName {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 22px;
+    color: #000000;
+}
+.quantity {
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 22px;
+    color: #888e99;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 19px;
+    letter-spacing: -0.1px;
+    color: #5364ff;
+}
+
+.saleInfo {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.408px;
+    color: #888e99;
+    margin: 30px 0px;
+}
+
+.total {
+    text-align: center;
+    width: 100%;
+    padding: 16px 0 15px;
+    background: #5364ff;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.notice {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.408px;
+    color: #000000;
+    opacity: 0.4;
+    margin: 30px 0px;
+}

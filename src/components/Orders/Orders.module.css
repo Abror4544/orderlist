@@ -1,0 +1,95 @@
+.ordersWrapper {
+    padding: 16px 0 20px 0;
+    background: #ecedef;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 16px 16px 0px 0px;
+}
+
+.titleBlock,
+.ordersBlock {
+    padding: 0 16px 0;
+}
+
+.titleBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleBlock h1 {
+    color: #000000;
+    letter-spacing: -0.408px;
+    font-size: 1.5rem;
+    line-height: 29px;
+    font-weight: 500;
+}
+
+.titleBlock img {
+    width: 26px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.ordersBlock {
+    display: flex;
+    margin-top: 21px;
+    overflow-x: scroll;
+}
+
+.orderItem {
+    background: #ffffff;
+    border-radius: 8px;
+    margin: 0px 12px;
+    width: 206px;
+    padding: 13px 0 10px;
+}
+
+.orderTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px 0;
+}
+
+.orderTitle h4 {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: #000000;
+}
+
+
+.orderTitle svg {
+    height: 22px;
+    width: 60px;
+}
+.orderTitle .price {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 22px;
+    letter-spacing: 2px;
+    color: #b5f968;
+}
+
+.date {
+    padding: 5px 12px 13px;
+    border-bottom: 1px solid #ecedef;
+    font-weight: normal;
+    font-size: 0.938rem;
+    line-height: 18px;
+    letter-spacing: -0.408px;
+    color: #5364ff;
+}
+
+ul {
+    padding: 10px 12px 0;
+}
+
+ul li {
+    font-weight: normal;
+    font-size: 0.938rem;
+    line-height: 18px;
+    letter-spacing: -0.408px;
+    color: #888e99;
+}

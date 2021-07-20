@@ -1,0 +1,19 @@
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: Fira Sans;
+    font-style: normal;
+    list-style: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap");
+
+.appWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background: url("assets/images/bg.png") no-repeat center center / cover;
+    position: fixed;
+}
