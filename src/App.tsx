@@ -1,9 +1,8 @@
-import React from "react";
 import { Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Info from "./components/Info/Info";
-import Orders from "./components/Orders/Orders";
+import OrdersContainer from "./components/Orders/OrdersContainer";
 
 const App = (props: any) => {
   return (
@@ -11,7 +10,7 @@ const App = (props: any) => {
       <Header />
       <Route
         render={(state) => (
-          <Orders {...props} state={props.state} />
+          <OrdersContainer {...props} state={props.state} />
         )}
         path="/Main"
       />
