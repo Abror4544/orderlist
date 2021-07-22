@@ -3,7 +3,7 @@ import thunkMiddleware from "redux-thunk";
 import ordersReducer from "./orders-reducer";
 
 let reducers = combineReducers({
-  ordersPage: ordersReducer,
+  ordersPage: ordersReducer
 });
 
 declare global {

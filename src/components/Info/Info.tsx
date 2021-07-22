@@ -1,18 +1,13 @@
 import s from "./Info.module.css";
 import React from 'react';
 import Good from "./Good";
-import { NavLink, RouteComponentProps } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import close from "../../assets/images/close.svg";
 
-interface GoodsInfoPageProps extends RouteComponentProps {
-    history: any;
-    state: any;
-}
-
-class Info extends React.Component<GoodsInfoPageProps> {
+class Info extends React.Component< { orders: any, history: any}, {getOrders: any}> {
     render() {
         let id = this.props.history.match.params.orderId;
-        let item = this.props.state.ordersPage.orders;
+        let item = this.props.orders;
         let goods = item[0].goods;
         item = item.filter(function (o: any) {
             return o.id === id

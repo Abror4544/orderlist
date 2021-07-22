@@ -5,6 +5,7 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import store from "./redux/redux-store";
 import { HashRouter } from "react-router-dom";
+import { Provider } from "react-redux";
 
 let rerenderEntireTree = (state: any) => {
   ReactDOM.render(

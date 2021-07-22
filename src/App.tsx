@@ -1,7 +1,7 @@
 import { Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
-import Info from "./components/Info/Info";
+import InfoContainer from "./components/Info/InfoContainer";
 import OrdersContainer from "./components/Orders/OrdersContainer";
 
 const App = (props: any) => {
@@ -15,7 +15,7 @@ const App = (props: any) => {
         path="/Main"
       />
       <Route {...props} render={(history :any, state: any) => (
-          <Info {...props} state={props.state} history={history} />
+          <InfoContainer {...props} state={props.state} history={history} />
         )}
         path="/Info/:orderId?"
       />

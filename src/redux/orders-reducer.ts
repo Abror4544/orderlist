@@ -27,7 +27,7 @@ const ordersReducer = (state = initialState, action: any) => {
 export const setOrders = (orders: any) => ({ type: SET_ORDERS, orders })
 export const toggleLoading = (loading: any) => ({ type: TOGGLE_LOADING, loading })
 
-export const getOrders = () => async (dispatch: any) => {
+export const getOrdersRequest = () => async (dispatch: any) => {
   dispatch(toggleLoading(true));
   let data = await API.getOrders();
   dispatch(toggleLoading(false));
