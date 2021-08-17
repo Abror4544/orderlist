@@ -30,7 +30,7 @@ class Info extends React.Component< { orders: any, history: any}, {getOrders: an
                     <h2>Заказ №{item[0].number}</h2>
                     <span>{item[0].date}</span>
                 </div>
-                <NavLink to={'/Main/'}>
+                <NavLink to={'/'}>
                     <div className={s.close}>
                         <img src={close} alt="" />
                     </div>

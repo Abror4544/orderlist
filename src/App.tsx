@@ -8,15 +8,15 @@ const App = (props: any) => {
   return (
     <div className="appWrapper">
       <Header />
-      <Route
+      <Route exact
         render={(state) => (
           <OrdersContainer {...props} state={props.state} />
         )}
-        path="/Main"
+        path="/"
       />
-      <Route {...props} render={(history :any, state: any) => (
-          <InfoContainer {...props} state={props.state} history={history} />
-        )}
+      <Route {...props} render={(history: any, state: any) => (
+        <InfoContainer {...props} state={props.state} history={history} />
+      )}
         path="/Info/:orderId?"
       />
     </div>

@@ -4,14 +4,13 @@ import App from "./App";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import store from "./redux/redux-store";
-import { HashRouter } from "react-router-dom";
-import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
 
 let rerenderEntireTree = (state: any) => {
   ReactDOM.render(
-    <HashRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <App state={state} dispatch={store.dispatch.bind(store)} store={store} />
-    </HashRouter>,
+    </BrowserRouter>,
     document.getElementById("root")
   );
 };
